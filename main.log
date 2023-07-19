@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.18)  19 JUL 2023 18:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.7.18)  19 JUL 2023 18:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -633,33 +633,33 @@ LaTeX Info: Redefining \textulc on input line 49.
 )) (/usr/local/texlive/2023/texmf-dist/tex/latex/lato/lato.sty
 Package: lato 2019/06/20 Style file for Lato.
 )
-LaTeX Font Info:    Trying to load font information for T1+lato-TLF on input line 45.
+LaTeX Font Info:    Trying to load font information for T1+lato-TLF on input line 37.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/lato/T1lato-TLF.fd
 File: T1lato-TLF.fd 2019/06/24 Font definitions for T1/lato-TLF.
 )
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
-(Font)              scaled to size 10.0pt on input line 45.
+(Font)              scaled to size 10.0pt on input line 37.
  (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 37.
+LaTeX Font Info:    ... okay on input line 37.
  (/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count318
@@ -679,7 +679,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 45.
+Package hyperref Info: Link coloring OFF on input line 37.
  (./main.out) (./main.out)
 \@outlinefile=\write5
 \openout5 = `main.out'.
@@ -724,132 +724,132 @@ Package hyperref Info: Link coloring OFF on input line 45.
 <debjit-pal.jpeg, id=10, 415.5525pt x 536.0025pt>
 File: debjit-pal.jpeg Graphic file (type jpg)
 <use debjit-pal.jpeg>
-Package pdftex.def Info: debjit-pal.jpeg  used on input line 59.
+Package pdftex.def Info: debjit-pal.jpeg  used on input line 51.
 (pdftex.def)             Requested size: 415.55148pt x 536.00119pt.
 
-Overfull \hbox (1.59999pt too wide) in paragraph at lines 59--59
+Overfull \hbox (1.59999pt too wide) in paragraph at lines 51--51
 [][] 
  []
 
 <<ot1.cmap>><<oml.cmap>><<oms.cmap>>
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <7> on input line 59.
+(Font)              <7> on input line 51.
 <<omx.cmap>>
 LaTeX Font Info:    External font `cmex7' loaded for size
-(Font)              <5> on input line 59.
+(Font)              <5> on input line 51.
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
-(Font)              scaled to size 24.88pt on input line 59.
-LaTeX Font Info:    Trying to load font information for T1+RobotoSlab-TLF on input line 59.
+(Font)              scaled to size 24.88pt on input line 51.
+LaTeX Font Info:    Trying to load font information for T1+RobotoSlab-TLF on input line 51.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/roboto/T1RobotoSlab-TLF.fd
 File: T1RobotoSlab-TLF.fd 2019/12/11 (autoinst) Font definitions for T1/RobotoSlab-TLF.
 )
 LaTeX Font Info:    Font shape `T1/RobotoSlab-TLF/m/n' aliased to
-(Font)              `T1/RobotoSlab-TLF/regular/n' on input line 59.
+(Font)              `T1/RobotoSlab-TLF/regular/n' on input line 51.
 LaTeX Font Info:    Font shape `T1/RobotoSlab-TLF/b/n' aliased to
-(Font)              `T1/RobotoSlab-TLF/bold/n' on input line 59.
+(Font)              `T1/RobotoSlab-TLF/bold/n' on input line 51.
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
-(Font)              scaled to size 12.0pt on input line 59.
+(Font)              scaled to size 12.0pt on input line 51.
 LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
-(Font)              scaled to size 12.0pt on input line 59.
+(Font)              scaled to size 12.0pt on input line 51.
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 59.
+(Font)              scaled to size 9.0pt on input line 51.
 LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
-(Font)              scaled to size 9.0pt on input line 59.
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree0 on input line 59.
+(Font)              scaled to size 9.0pt on input line 51.
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree0 on input line 51.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/fontawesome5/ufontawesomefree0.fd)
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on input line 59.
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on input line 51.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd)
-LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on input line 59.
+LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on input line 51.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands0.fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <9> not available
-(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead on input line 59.
-LaTeX Font Info:    Trying to load font information for U+fontawesomebrands1 on input line 59.
+(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead on input line 51.
+LaTeX Font Info:    Trying to load font information for U+fontawesomebrands1 on input line 51.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands1.fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands1/solid/n' in size <9> not available
-(Font)              Font shape `U/fontawesomebrands1/regular/n' tried instead on input line 59.
+(Font)              Font shape `U/fontawesomebrands1/regular/n' tried instead on input line 51.
 
-Overfull \hbox (27.85751pt too wide) in paragraph at lines 59--59
+Overfull \hbox (27.85751pt too wide) in paragraph at lines 51--51
 []$[]$  $[]$  
  []
 
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/n' will be
-(Font)              scaled to size 17.28pt on input line 68.
+(Font)              scaled to size 17.28pt on input line 60.
 LaTeX Font Info:    Font shape `T1/RobotoSlab-TLF/m/n' aliased to
-(Font)              `T1/RobotoSlab-TLF/regular/n' on input line 68.
+(Font)              `T1/RobotoSlab-TLF/regular/n' on input line 60.
 LaTeX Font Info:    Font shape `T1/RobotoSlab-TLF/b/n' aliased to
-(Font)              `T1/RobotoSlab-TLF/bold/n' on input line 68.
+(Font)              `T1/RobotoSlab-TLF/bold/n' on input line 60.
 LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
-(Font)              scaled to size 10.0pt on input line 79.
-LaTeX Font Info:    Trying to load font information for TS1+lato-TLF on input line 87.
+(Font)              scaled to size 10.0pt on input line 71.
+LaTeX Font Info:    Trying to load font information for TS1+lato-TLF on input line 79.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/lato/TS1lato-TLF.fd
 File: TS1lato-TLF.fd 2019/06/24 Font definitions for TS1/lato-TLF.
 )
 LaTeX Font Info:    Font shape `TS1/lato-TLF/m/n' will be
-(Font)              scaled to size 9.0pt on input line 87.
+(Font)              scaled to size 9.0pt on input line 79.
 LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <10> not available
-(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead on input line 99.
-LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on input line 99.
+(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead on input line 91.
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on input line 91.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd) (/usr/local/texlive/2023/texmf-dist/tex/latex/fontawesome5/ufontawesomefree3.fd)
-Overfull \hbox (1.59999pt too wide) in paragraph at lines 103--103
+Overfull \hbox (1.59999pt too wide) in paragraph at lines 95--95
 []|[]| 
  []
 
 
-Overfull \hbox (1.59999pt too wide) in paragraph at lines 104--104
+Overfull \hbox (1.59999pt too wide) in paragraph at lines 96--96
 []|[]| 
  []
 
 
-Overfull \hbox (1.59999pt too wide) in paragraph at lines 105--105
+Overfull \hbox (1.59999pt too wide) in paragraph at lines 97--97
 []|[]| 
  []
 
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/it' will be
-(Font)              scaled to size 10.0pt on input line 115.
+(Font)              scaled to size 10.0pt on input line 103.
 LaTeX Font Info:    Font shape `T1/lato-TLF/m/it' will be
-(Font)              scaled to size 12.0pt on input line 115.
+(Font)              scaled to size 12.0pt on input line 103.
 
-Overfull \hbox (2.55997pt too wide) in paragraph at lines 121--121
+Overfull \hbox (2.55997pt too wide) in paragraph at lines 109--109
 [][] []  
  []
 
 
-Overfull \hbox (208.05151pt too wide) in paragraph at lines 122--124
+Overfull \hbox (208.05151pt too wide) in paragraph at lines 110--112
 []\T1/lato-TLF/m/n/10 Trained on Spring REST, Data JPA, Spring Boot. [] [] [][]  
  []
 
 
-Overfull \hbox (2.55997pt too wide) in paragraph at lines 125--125
+Overfull \hbox (2.55997pt too wide) in paragraph at lines 113--113
 [][] []  
  []
 
 
-Overfull \hbox (174.15155pt too wide) in paragraph at lines 126--128
-[]\T1/lato-TLF/m/n/10 Trained on An-gu-lar and Ad-vanced Java. [] [] [][][] 
+Overfull \hbox (174.15155pt too wide) in paragraph at lines 114--116
+[]\T1/lato-TLF/m/n/10 Trained on An-gu-lar and Ad-vanced Java. [] [] [][]  
  []
 
 
-Overfull \hbox (2.55997pt too wide) in paragraph at lines 128--128
+Overfull \hbox (2.55997pt too wide) in paragraph at lines 117--117
 [][] []  
  []
 
 
-Overfull \hbox (2.55997pt too wide) in paragraph at lines 137--137
+Overfull \hbox (2.55997pt too wide) in paragraph at lines 126--126
 [][] []  
  []
 
 
-Overfull \hbox (2.55997pt too wide) in paragraph at lines 142--142
+Overfull \hbox (2.55997pt too wide) in paragraph at lines 131--131
 [][] []  
  []
 
 
-Overfull \hbox (2.55997pt too wide) in paragraph at lines 147--147
+Overfull \hbox (2.55997pt too wide) in paragraph at lines 136--136
 [][] []  
  []
 
 LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <12> not available
-(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead on input line 154.
+(Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead on input line 143.
 [1
 
 {/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/roboto/rbto_j2bk2t.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lato/a_cl4kdn.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free0.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free2.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands1.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/lato/a_rt66h3.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free3.enc} <./debjit-pal.jpeg>] (./main.aux)
@@ -869,7 +869,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  125i,10n,121p,574b,2380s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/typoland/lato/Lato-Bold.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/typoland/lato/Lato-Italic.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/typoland/lato/Lato-Regular.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/google/roboto/RobotoSlab-Bold.pfb>
-Output written on main.pdf (1 page, 230364 bytes).
+Output written on main.pdf (1 page, 230359 bytes).
 PDF statistics:
  90 PDF objects out of 1000 (max. 8388607)
  2 named destinations out of 1000 (max. 500000)

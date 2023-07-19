@@ -1,10 +1,5 @@
 \documentclass[10pt,legalpaper,ragged2e,withhyper]{altacv}
 
-%% AltaCV uses the fontawesome5 and academicons fonts
-%% and packages.
-%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
-
-%% Fork v1.6.5c: Overwriting sloppy environment to ignore any spaces and be used to solve overlapping cvtags
 \newenvironment{sloppypar*}{\sloppy\ignorespaces}{\par}
 
 \geometry{left=1.2cm,right=1.2cm,top=1cm,bottom=1cm,columnsep=0.75cm}
@@ -36,11 +31,8 @@
 \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
 \renewcommand{\cvsubsectionfont}{\large\bfseries}
 
-% Change the bullets for itemize and rating marker
-% for \cvskill if you want to
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
-
 
 \begin{document}
 \name{Debjit Pal}
@@ -57,13 +49,13 @@
 }
 
 \makecvheader
-%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
 % \AtBeginEnvironment{itemize}{\small}
 
 
 \columnratio{0.4}
 
 \begin{paracol}{2}
+
     % ----- TECH STACK -----
     \cvsection{Tech Stacks}
     \begin{sloppypar*}
@@ -98,16 +90,12 @@
     \cvsection{References}
     \cvref{Prof.\ Alpha Beta}{Institute}{a.beta@university.edu}
 
+    % ----- ACHIEVEMENTS -----
     \cvsection{Achievements}
-
     \cvachievement{\faTrophy}{Fantastic}{and some details}\\
     \cvachievement{\faHeartbeat}{Another}{more details}\\
     \cvachievement{\faHeartbeat}{Another}{more details}
-
     \newpage
-
-    %% Switch to the right column. This will now automatically move to the second
-    %% page if the content is too long.
     \switchcolumn
 
     % ----- ABOUT ME -----
@@ -125,6 +113,7 @@
     \cvevent{Digital Nurture Flexi Intern}{Cognizant}{Apr 2022 -- Jun 2022}{Remote}
     Trained on Angular and Advanced Java.
     \divider
+
     \cvevent{Research Intern}{IASc-INSA-NASI Summer Fellowship}{Jun 2021 -- Jul 2021}{Remote}
     Here I have worked under Dr. Venky Krishnan, faculty of TIFR CAM, Bangalore on Real Analysis and Topology. \\
     \begin{itemize}
