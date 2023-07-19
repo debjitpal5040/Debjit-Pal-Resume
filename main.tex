@@ -1,172 +1,236 @@
-\documentclass[]{debjitpal-resume}
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+%% AltaCV uses the fontawesome5 and academicons fonts
+%% and packages.
+%% See http://texdoc.net/pkg/fontawesome5 and http://texdoc.net/pkg/academicons for full list of symbols. You MUST compile with XeLaTeX or LuaLaTeX if you want to use academicons.
+
+%% Fork v1.6.5c: Overwriting sloppy environment to ignore any spaces and be used to solve overlapping cvtags
+\newenvironment{sloppypar*}{\sloppy\ignorespaces}{\par}
+
+% Change the page layout if you need to
+\geometry{left=1.2cm,right=1.2cm,top=1cm,bottom=1cm,columnsep=0.75cm}
+
+% The paracol package lets you typeset columns of text in parallel
+\usepackage{paracol}
+
+% Change the font if you want to, depending on whether
+% you're using pdflatex or xelatex/lualatex
+\ifxetexorluatex
+  % If using xelatex or lualatex:
+  \setmainfont{Roboto Slab}
+  \setsansfont{Lato}
+  \renewcommand{\familydefault}{\sfdefault}
+\else
+  % If using pdflatex:
+  \usepackage[rm]{roboto}
+  \usepackage[defaultsans]{lato}
+  % \usepackage{sourcesanspro}
+  \renewcommand{\familydefault}{\sfdefault}
+\fi
+
+% Fork (before v1.6.5a): Change the color codes to test your personal variant on any mode
+\ifdarkmode%
+  \definecolor{PrimaryColor}{HTML}{C69749}
+  \definecolor{SecondaryColor}{HTML}{D49B54}
+  \definecolor{ThirdColor}{HTML}{1877E8}
+  \definecolor{BodyColor}{HTML}{ABABAB}
+  \definecolor{EmphasisColor}{HTML}{ABABAB}
+  \definecolor{BackgroundColor}{HTML}{191919}
+\else%
+  \definecolor{PrimaryColor}{HTML}{001F5A}
+  \definecolor{SecondaryColor}{HTML}{0039AC}
+  \definecolor{ThirdColor}{HTML}{F3890B}
+  \definecolor{BodyColor}{HTML}{666666}
+  \definecolor{EmphasisColor}{HTML}{2E2E2E}
+  \definecolor{BackgroundColor}{HTML}{E2E2E2}
+\fi%
+
+\colorlet{name}{PrimaryColor}
+\colorlet{tagline}{SecondaryColor}
+\colorlet{heading}{PrimaryColor}
+\colorlet{headingrule}{ThirdColor}
+\colorlet{subheading}{SecondaryColor}
+\colorlet{accent}{SecondaryColor}
+\colorlet{emphasis}{EmphasisColor}
+\colorlet{body}{BodyColor}
+\pagecolor{BackgroundColor}
+
+% Change some fonts, if necessary
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\small\bfseries}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+%% \addbibresource{main.bib}
 
 \begin{document}
+\name{Debjit Pal}
+\tagline{Test Developer}
+%% You can add multiple photos on the left or right
+%% photo centreing is automatic
+\photoL{4cm}{debjit-pal}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%
-%     COLUMN ONE
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\personalinfo{
+    \email{debjitpal5040@gmail.com}\smallskip
+    \phone{+01-2345-678901}
+    \location{City, Country}\\
+    \linkedin{linkedinUser}
+    \github{githubUser}
+    \npm{npmUser}
+    \dev{devtoUser}
+    %\homepage{nicolasomar.me}
+    %\medium{nicolasomar}
+    %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+    % \orcid{0000-0000-0000-0000}
+    %% You can add your own arbtrary detail with
+    %% \printinfo{symbol}{detail}[optional hyperlink prefix]
+    % \printinfo{\faPaw}{Hey ho!}[https://example.com/]
+    %% Or you can declare your own field with
+    %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
+    % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
+    % \gitlab{your_id}
+}
 
-\begin{minipage}[t]{0.35\textwidth}
-  \begin{large}
-    \headername{Debjit Pal}\\
-  \end{large}
-  Pre-final Year (B.Tech)\\
-  Computer Science $\&$  Engineering\\
-  Kalyani Government Engineering College \\
-  CGPA : 9.28 till 2nd Year
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  %     LINKS
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \section{Social Links}
-  \noindent\rule{5cm}{0.4pt}
+\makecvheader
+%% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
+% \AtBeginEnvironment{itemize}{\small}
 
-  \href{https://github.com/debjitpal5040}{\custombold{GitHub}} \href{https://www.linkedin.com/in/debjit-pal-539214192/}{\custombold{LinkedIn}} \href{https://www.twitter.com/debjitpal5040}{\custombold{Twitter}} \\
-  \href{https://www.codechef.com/users/debjitpal5040}{\custombold{CodeChef}} \href{https://www.hackerrank.com/debjitpal5040}{\custombold{HackerRank}} \href{https://codeforces.com/profile/a_beautiful_mind}{\custombold{CodeForces}} \\
-  \href{https://developers.google.com/profile/u/debjitpal}{\custombold{Google Developer}}
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  %     SKILLS
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \section{Language Skills}
-  \noindent\rule{5cm}{0.4pt}
+%% Set the left/right column width ratio to 6:4.
+\columnratio{0.25}
 
-  \custombold{Bengali} : Native\\
-  \custombold{English}  : Fluent\\
-  \custombold{Hindi}  : Proficient
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  %     COURSEWORK
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \section{Technical Skills}
-  \noindent\rule{5cm}{0.4pt}
-  \subsection{\custombold{Operating Systems}}
-  macOS, Windows, Ubuntu
-  \vspace{6pt}
-  \subsection{\custombold{Programming Languages}}
-  Python, Java, Swift, C/C++, HTML, CSS
-  \vspace{6pt}
-  \subsection{\custombold{Libraries/Frameworks}}
-  Flask, Django, Bootstrap
-  \vspace{6pt}
-  \subsection{\custombold{Databases}}
-  MySQL, PostgreSQL
-  \vspace{6pt}
-  \subsection{\custombold{Others}}
-  CorelDraw, Photoshop \\
-  Git, Docker, Shell \\
-  VS Code, Xcode, Android Studio
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  %     EDUCATION
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \section{Education}
-  \noindent\rule{5cm}{0.4pt}\\
-  \datecolor{2019-2023}
-  \subsection{B.Tech. in CSE}
-  \custombold{Kalyani Government Engineering College} \\
-  YGPA : 8.96 / 10 (1st Year)\\
-  YGPA : 9.60 / 10 (2nd Year)\\
-  \vspace{8pt}
-  \datecolor{2017-2018}
-  \subsection{Higher Secondary}
-  \custombold{Uttarpara Government High School}\\
-  Total Marks Obtained : 455/500 \\
-  Aggregate Percentage : 91\%\\
-  \vspace{8pt}
-  \datecolor{2011-2016}
-  \subsection{Secondary}
-  \custombold{Baranagore Ramakrishna Mission Ashrama High School}\\
-  Total Marks Obtained : 622/700 \\
-  Aggregate Percentage : 88.85\%
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  %
-  %     COLUMN TWO
-  %
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\end{minipage}
-\hfill
-\begin{minipage}[t]{0.6\textwidth}
-  % \descript{BTech in Computer Science}
-  \hspace*{0pt}\hfill    \\
-  \hspace*{0pt}\hfill    \\
-  \hspace*{0pt}\hfill 105, D.D. Mondal Ghat Road, Dakshineswar \\
-  \hspace*{0pt}\hfill Kolkata, West Bengal, Pin ‐ 700076, India \\
-  \hspace*{0pt}\hfill Mobile : +91‐8697785380 \\
-  \hspace*{0pt}\hfill Email : \href{mailto:debjitpal5040@gmail.com}{\custombold{debjitpal5040@gmail.com}} \\
-  \hspace*{0pt}\hfill Website : \href{https://debjitpal5040.github.io}{\custombold{debjitpal5040.github.io}}
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  %     EXPERIENCE
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \section{Experiences}
-  \noindent\rule{12.5cm}{0.4pt}
-  \datecolor{Aug 2021-now} \runsubsection{GirlScript Winter Of Contributing}\\
-  \noindent
-  \hspace{4em}%
-  \begin{minipage}{0.85\textwidth\vspace{2pt}}
-    In this program I contributed here to create the world's largest multilingual content repository.\\
-    \descriptright{Link :- \custombold{\href{https://github.com/debjitpal5040/winter-of-contributing}{GWoC}}}
-  \end{minipage}
-  \sectionsep
-  \datecolor{Jun 2021-Jul 2021} \runsubsection{IASc‐INSA‐NASI Summer Research Fellowship}\\
-  \noindent
-  \hspace{4em}%
-  \begin{minipage}{0.85\textwidth\vspace{2pt}}
-    I worked under Dr. Venky Krishnan Sir, faculty of TIFR Centre for Applicable Mathematics, Bangalore. My research topic was Real Analysis and Point Set Topology.\\
-    \descriptright{Link :- \custombold{\href{https://1drv.ms/u/s!An6FCBFhh1ougXWDCC73kpfBrWrN?e=Yc2LAE}{Research}}}
-  \end{minipage}
-  \sectionsep
-  \datecolor{May 2021-Jun 2021} \runsubsection{KGEC Summer Of Code}\\
-  \noindent
-  \hspace{4em}%
-  \begin{minipage}{0.85\textwidth\vspace{2pt}}
-    In this program I contributed to "heart‐saver" repository where I developed a web-based ML model to predict heart attack chances and "Space‐Missions" repository where I did detailed data analysis of some space missions.\\
-    \descriptright{Link :- \custombold{\href{https://github.com/debjitpal5040/heart-saver}{Heart-Saver}, \href{https://github.com/debjitpal5040/Space-Missions}{Space-Missions}}}
-  \end{minipage}
-  \sectionsep
-  \datecolor{Mar 2021-May 2021} \runsubsection{GirlScript Summer Of Code}\\
-  \noindent
-  \hspace{4em}%
-  \begin{minipage}{0.85\textwidth\vspace{2pt}}
-    In this program I contributed to "Master-PyAlgo" repository where I wrote and documented Python codes for applications of some well known algorithms.\\
-    \descriptright{Link :- \custombold{\href{https://github.com/debjitpal5040/Master-PyAlgo}{Master-PyAlgo}}}
-  \end{minipage}
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  %     AWARDS
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \section{Projects}
-  \noindent\rule{12.5cm}{0.4pt}
-  \datecolor{2021} \runsubsection{\href{https://github.com/debjitpal5040/De-M-Calculator}{\custombold{De-M-Calculator}}}
-  \descript{HTML, CSS, Javascript}
-  \noindent
-  \hspace{4em}%
-  \begin{minipage}{0.85\textwidth\vspace{5pt}}
-    Made a simple calculator using HTML, CSS and Javascript.
-  \end{minipage}
-  \datecolor{2021} \runsubsection{\href{https://github.com/debjitpal5040/Qwickeys}{\custombold{Qwickeys}}}
-  \descript{HTML, CSS}
-  \noindent
-  \hspace{4em}%
-  \begin{minipage}{0.85\textwidth\vspace{5pt}}
-    Created a Macintosh keyboard model using HTML and CSS.
-  \end{minipage}
-  \datecolor{2021} \runsubsection{\href{https://github.com/debjitpal5040/iCoder}{\custombold{iCoder}}}
-  \descript{HTML, Bootstrap}
-  \noindent
-  \hspace{4em}%
-  \begin{minipage}{0.85\textwidth\vspace{5pt}}
-    Designed a simple programming tutorial website using HTML and Bootstrap.
-  \end{minipage}
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  %     SIDE PROJECT
-  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-  \section{Achievements/Awards}
-  \noindent\rule{12.5cm}{0.4pt}
-  \begin{itemize}
-    \item \href{https://drive.google.com/file/d/1-0QWUmpZN7C7IGu7rhQgXSEN-h2_1IYc/view?usp=sharing}{Qualified Codechef SnackDown 2021 Round 1A}
-    \item \href{https://drive.google.com/file/d/1-0W_lI_ffQuWv2Uz8gHq8oKya2hHcKIh/view?usp=sharing}{Qualified Facebook HackerCup 2021 Round 1}
-    \item Harvard Business Review Ascend Select Member
-    \item Qualified ISI B.Math Entrance Exam 2019
-    \item Qualified Pre-RMO 2018
-  \end{itemize}
+% Start a 2-column paracol. Both the left and right columns will automatically
+% break across pages if things get too long.
+\begin{paracol}{2}
+    % ----- TECH STACK -----
+    \cvsection{TECH STACK}
+    %% Fork v1.6.5c: The sloppypar* environment is used to avoid tags overlapping with section width
+    \begin{sloppypar*}
+        \cvtags{One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten}
+        \medskip
 
-\end{minipage}
-\end{document}  \documentclass[]{article}
+        \cvtags{Red, Yellow, Blue, Green, Violet, Orange}
+    \end{sloppypar*}
+    % ----- TECH STACK -----
+
+    % ----- LEARNING -----
+    \cvsection{Learning}
+    \begin{sloppypar}
+        \cvtags{Uno, Dos, Tres, Cuatro, Cinco, Seis, Siete, Ocho, Nueve, Diez}
+        \medskip
+
+        \cvtags{Rojo, Amarillo, Azul, Verde, Violeta, Naranja, Marron, Blanco, Gris, Negro}
+    \end{sloppypar}
+    % ----- LEARNING -----
+
+    % ----- LANGUAGES -----
+    \cvsection{Languages}
+    \cvlang{Lang 1}{Native}\\
+    \divider
+
+    \cvlang{Lang 2}{Basic / A2}
+    %% Yeah I didn't spend too much time making all the
+    %% spacing consistent... sorry. Use \smallskip, \medskip,
+    %% \bigskip, \vpsace etc to make ajustments.
+    % ----- LANGUAGES -----
+
+    % ----- REFERENCES -----
+    \cvsection{References}
+    \cvref{Prof.\ Alpha Beta}{Institute}{a.beta@university.edu}
+    \divider
+
+    \cvref{Boss\ Gamma Delta}{Business}{g.delta@business.com}
+    % ----- REFERENCES -----
+
+    % ----- MOST PROUD -----
+    % \cvsection{Most Proud of}
+
+    % \cvachievement{\faTrophy}{Fantastic Achievement}{and some details about it}\\
+    % \divider
+    % \cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}\\
+    % \divider
+    % \cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}
+    % ----- MOST PROUD -----
+
+    % \cvsection{A Day of My Life}
+
+    % Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+    % \wheelchart{outer radius}{inner radius}{
+    % comma-separated list of value/text width/color/detail}
+    % \wheelchart{1.5cm}{0.5cm}{%
+    %   6/8em/accent!30/{Sleep,\\beautiful sleep},
+    %   3/8em/accent!40/Hopeful novelist by night,
+    %   8/8em/accent!60/Daytime job,
+    %   2/10em/accent/Sports and relaxation,
+    %   5/6em/accent!20/Spending time with family
+    % }
+
+    % use ONLY \newpage if you want to force a page break for
+    % ONLY the current column
+    \newpage
+
+    %% Switch to the right column. This will now automatically move to the second
+    %% page if the content is too long.
+    \switchcolumn
+
+    % ----- ABOUT ME -----
+    \cvsection{About Me}
+    \begin{quote}
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    \end{quote}
+    % ----- ABOUT ME -----
+
+    % ----- EXPERIENCE -----
+    \cvsection{Experience}
+    \cvevent{Charge}{Company}{Mm YYYY -- Mm YYYY}{City, Country}
+    \begin{itemize}
+        \item First achievement
+        \item Second achievement
+        \item Third achievement
+    \end{itemize}
+    \divider
+
+    \cvevent{Charge}{Company}{Mm YYYY -- Mm YYYY}{City, Country}
+    \begin{itemize}
+        \item First achievement
+        \item Second achievement
+        \item Third achievement
+    \end{itemize}
+    % ----- EXPERIENCE -----
+
+    % ----- EDUCATION -----
+    \cvsection{Education}
+    \cvevent{Title}{Institution}{Mm YYYY -- Mm YYYY}{City, Country}
+    \begin{itemize}
+        \item GPA: 1,23
+    \end{itemize}
+    \divider
+
+    \cvevent{Title}{Institution}{Mm YYYY -- Mm YYYY}{City, Country}
+    \begin{itemize}
+        \item GPA: 1,23
+    \end{itemize}
+    % ----- EDUCATION -----
+
+    % ----- PROJECTS -----
+    \cvsection{Projects}
+    \cvevent{Project 1 }{\cvreference{\faGithub}{https://github.com/user/repo}\cvreference{| \faGlobe}{https://project-demo.com/}}{Mm YYYY -- Mm YYYY}{}
+    \begin{itemize}
+        \item Item 1
+        \item Item 2
+    \end{itemize}
+    \divider
+
+    \cvevent{Project 2 }{\cvreference{\faGitlab}{https://gitlab.com/user/repo}\cvreference{| \faGlobe}{https://project-demo.com/}}{Mm YYYY -- Mm YYYY}{}
+    \begin{itemize}
+        \item Item 1
+        \item Item 2
+    \end{itemize}
+    % ----- PROJECTS -----
+\end{paracol}
+\end{document}
