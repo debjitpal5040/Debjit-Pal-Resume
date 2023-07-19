@@ -1,4 +1,4 @@
-\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+\documentclass[10pt,legalpaper,ragged2e,withhyper]{altacv}
 
 %% AltaCV uses the fontawesome5 and academicons fonts
 %% and packages.
@@ -7,43 +7,19 @@
 %% Fork v1.6.5c: Overwriting sloppy environment to ignore any spaces and be used to solve overlapping cvtags
 \newenvironment{sloppypar*}{\sloppy\ignorespaces}{\par}
 
-% Change the page layout if you need to
 \geometry{left=1.2cm,right=1.2cm,top=1cm,bottom=1cm,columnsep=0.75cm}
 
-% The paracol package lets you typeset columns of text in parallel
 \usepackage{paracol}
+\usepackage[rm]{roboto}
+\usepackage[defaultsans]{lato}
+\renewcommand{\familydefault}{\sfdefault}
 
-% Change the font if you want to, depending on whether
-% you're using pdflatex or xelatex/lualatex
-\ifxetexorluatex
-  % If using xelatex or lualatex:
-  \setmainfont{Roboto Slab}
-  \setsansfont{Lato}
-  \renewcommand{\familydefault}{\sfdefault}
-\else
-  % If using pdflatex:
-  \usepackage[rm]{roboto}
-  \usepackage[defaultsans]{lato}
-  % \usepackage{sourcesanspro}
-  \renewcommand{\familydefault}{\sfdefault}
-\fi
-
-% Fork (before v1.6.5a): Change the color codes to test your personal variant on any mode
-\ifdarkmode%
-  \definecolor{PrimaryColor}{HTML}{C69749}
-  \definecolor{SecondaryColor}{HTML}{D49B54}
-  \definecolor{ThirdColor}{HTML}{1877E8}
-  \definecolor{BodyColor}{HTML}{ABABAB}
-  \definecolor{EmphasisColor}{HTML}{ABABAB}
-  \definecolor{BackgroundColor}{HTML}{191919}
-\else%
-  \definecolor{PrimaryColor}{HTML}{001F5A}
-  \definecolor{SecondaryColor}{HTML}{0039AC}
-  \definecolor{ThirdColor}{HTML}{F3890B}
-  \definecolor{BodyColor}{HTML}{666666}
-  \definecolor{EmphasisColor}{HTML}{2E2E2E}
-  \definecolor{BackgroundColor}{HTML}{E2E2E2}
-\fi%
+\definecolor{PrimaryColor}{HTML}{001F5A}
+\definecolor{SecondaryColor}{HTML}{0039AC}
+\definecolor{ThirdColor}{HTML}{F3890B}
+\definecolor{BodyColor}{HTML}{666666}
+\definecolor{EmphasisColor}{HTML}{2E2E2E}
+\definecolor{BackgroundColor}{HTML}{E2E2E2}
 
 \colorlet{name}{PrimaryColor}
 \colorlet{tagline}{SecondaryColor}
@@ -55,7 +31,6 @@
 \colorlet{body}{BodyColor}
 \pagecolor{BackgroundColor}
 
-% Change some fonts, if necessary
 \renewcommand{\namefont}{\Huge\rmfamily\bfseries}
 \renewcommand{\personalinfofont}{\small\bfseries}
 \renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
@@ -66,105 +41,69 @@
 \renewcommand{\itemmarker}{{\small\textbullet}}
 \renewcommand{\ratingmarker}{\faCircle}
 
-%% sample.bib contains your publications
-%% \addbibresource{main.bib}
 
 \begin{document}
 \name{Debjit Pal}
 \tagline{B.Tech Graduate}
-%% You can add multiple photos on the left or right
-%% photo centreing is automatic
 \photoL{4cm}{debjit-pal}
 
 \personalinfo{
     \email{debjitpal5040@gmail.com}\smallskip
     \phone{+91-86977-85380}
     \location{Kolkata, India}\\
-    \linkedin{linkedinUser}
-    \github{githubUser}
-    \npm{npmUser}
-    \dev{devtoUser}
-    \homepage{nicolasomar.me}
-    \medium{nicolasomar}
-    %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
-    % \orcid{0000-0000-0000-0000}
-    %% You can add your own arbtrary detail with
-    %% \printinfo{symbol}{detail}[optional hyperlink prefix]
-    % \printinfo{\faPaw}{Hey ho!}[https://example.com/]
-    %% Or you can declare your own field with
-    %% \NewInfoFiled{fieldname}{symbol}[optional hyperlink prefix] and use it:
-    % \NewInfoField{gitlab}{\faGitlab}[https://gitlab.com/]
-    % \gitlab{your_id}
+    \linkedin{debjit-pal-539214192}
+    \github{debjitpal5040}
+    \twitter{debjitpal5040}
 }
 
 \makecvheader
 %% Depending on your tastes, you may want to make fonts of itemize environments slightly smaller
 % \AtBeginEnvironment{itemize}{\small}
 
-%% Set the left/right column width ratio to 6:4.
-\columnratio{0.25}
 
-% Start a 2-column paracol. Both the left and right columns will automatically
-% break across pages if things get too long.
+\columnratio{0.4}
+
 \begin{paracol}{2}
     % ----- TECH STACK -----
-    \cvsection{TECH STACK}
-
+    \cvsection{Tech Stacks}
     \begin{sloppypar*}
-        \cvtags{One, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten}
+        \cvtags{Python, Java, HTML, CSS, JavaScript}\\
         \medskip
-
-        \cvtags{Red, Yellow, Blue, Green, Violet, Orange}
+        \cvtags{PyTorch, TensorFlow, Scikit-Learn, Django, Angular, Spring Boot}\\
+        \medskip
+        \cvtags{MySQL, Git, Docker, Machine Learning}
     \end{sloppypar*}
-
-    % ----- LEARNING -----
-    \cvsection{Learning}
-    \begin{sloppypar}
-        \cvtags{Uno, Dos, Tres, Cuatro, Cinco}
-        \medskip
-
-        \cvtags{Rojo, Amarillo, Azul, Verde, Violeta}
-    \end{sloppypar}
 
     % ----- LANGUAGES -----
     \cvsection{Languages}
     \cvlang{Bengali}{Native}\\
-    \divider
     \cvlang{English}{Fluent}\\
-    \divider
     \cvlang{Hindi}{Proficient}
+
+    % ----- LEARNING -----
+    \cvsection{Certifications}
+    \begin{sloppypar*}
+        \begin{itemize}
+            \item Introduction to Discrete Mathematics for Computer Science Specialization Coursera
+            \item Mathematics for Data Science Specialization Coursera
+            \item AWS Machine Learning Foundations Udacity
+            \item Microsoft Certified Azure Data Scientist Associate
+            \item Microsoft Certified: Azure AI Fundamentals
+            \item Microsoft Certified: Azure Fundamentals
+            \item Google Cloud Computing Foundation with Kubernetes
+        \end{itemize}
+    \end{sloppypar*}
 
     % ----- REFERENCES -----
     \cvsection{References}
     \cvref{Prof.\ Alpha Beta}{Institute}{a.beta@university.edu}
-    \divider
 
-    \cvref{Boss\ Gamma Delta}{Business}{g.delta@business.com}
+    \cvsection{Achievements}
 
-    % ----- MOST PROUD -----
-    % \cvsection{Most Proud of}
+    \cvachievement{\faTrophy}{Fantastic}{and some details}\\
+    \cvachievement{\faHeartbeat}{Another}{more details}\\
+    \cvachievement{\faHeartbeat}{Another}{more details}
 
-    % \cvachievement{\faTrophy}{Fantastic Achievement}{and some details about it}\\
-    % \divider
-    % \cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}\\
-    % \divider
-    % \cvachievement{\faHeartbeat}{Another achievement}{more details about it of course}
-
-    % \cvsection{A Day of My Life}
-
-    % Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
-    % \wheelchart{outer radius}{inner radius}{
-    % comma-separated list of value/text width/color/detail}
-    % \wheelchart{1.5cm}{0.5cm}{%
-    %   6/8em/accent!30/{Sleep,\\beautiful sleep},
-    %   3/8em/accent!40/Hopeful novelist by night,
-    %   8/8em/accent!60/Daytime job,
-    %   2/10em/accent/Sports and relaxation,
-    %   5/6em/accent!20/Spending time with family
-    % }
-
-    % use ONLY \newpage if you want to force a page break for
-    % ONLY the current column
     \newpage
 
     %% Switch to the right column. This will now automatically move to the second
@@ -174,24 +113,23 @@
     % ----- ABOUT ME -----
     \cvsection{About Me}
     \begin{quote}
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        I am a recent graduate with a B.Tech. in Computer Science Engineering from Kalyani Government Engineering College, with a CGPA of 9.31, being skilled in various technologies. I am looking for a position where I can gather valuable knowledge and experience, enhance my skills, and contribute to the development of innovative products.
     \end{quote}
 
     % ----- EXPERIENCE -----
     \cvsection{Experience}
-    \cvevent{Charge}{Company}{Mm YYYY -- Mm YYYY}{City, Country}
-    \begin{itemize}
-        \item First achievement
-        \item Second achievement
-        \item Third achievement
-    \end{itemize}
+    \cvevent{Genc Next Intern}{Cognizant}{Apr 2023 -- May 2023}{Kolkata, West Bengal}
+    Trained on Spring REST, Data JPA, Spring Boot.
     \divider
 
-    \cvevent{Charge}{Company}{Mm YYYY -- Mm YYYY}{City, Country}
+    \cvevent{Digital Nurture Flexi Intern}{Cognizant}{Apr 2022 -- Jun 2022}{Remote}
+    Trained on Angular and Advanced Java.
+    \divider
+    \cvevent{Research Intern}{IASc-INSA-NASI Summer Fellowship}{Jun 2021 -- Jul 2021}{Remote}
+    Here I have worked under Dr. Venky Krishnan, faculty of TIFR CAM, Bangalore on Real Analysis and Topology. \\
     \begin{itemize}
-        \item First achievement
-        \item Second achievement
-        \item Third achievement
+        \item \href{https://www.academia.edu/94639467/Four_Week_Research_Report_of_IASC_INSA_NASI_Summer_Research_Fellowship?source=swp_share}{Four Week Research Report}
+        \item \href{https://www.academia.edu/94640080/Final_Week_Research_Report_of_IASC_INSA_NASI_Summer_Research_Fellowship?source=swp_share}{Final Week Research Report}
     \end{itemize}
 
     % ----- EDUCATION -----
@@ -213,12 +151,11 @@
 
     % ----- PROJECTS -----
     \cvsection{Projects}
-    \cvevent{Project 1 }{\cvreference{\faGithub}{https://github.com/user/repo}\cvreference{| \faGlobe}{https://project-demo.com/}}{Mm YYYY -- Mm YYYY}{}
+    \cvevent{ChatKGEC }{\cvreference{\faGithub}{https://github.com/user/repo}\cvreference{| \faGlobe}{https://project-demo.com/}}{Mm YYYY -- Mm YYYY}{}
     \begin{itemize}
         \item Item 1
         \item Item 2
     \end{itemize}
-    \divider
 
     \cvevent{Project 2 }{\cvreference{\faGitlab}{https://gitlab.com/user/repo}\cvreference{| \faGlobe}{https://project-demo.com/}}{Mm YYYY -- Mm YYYY}{}
     \begin{itemize}
