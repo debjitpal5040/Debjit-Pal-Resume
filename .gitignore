@@ -1,4 +1,6 @@
 .DS_Store
 main.log
 main.synctex.gz
+main.aux
+main.out
 pdfa.xmpi
